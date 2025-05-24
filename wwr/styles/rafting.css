@@ -118,7 +118,7 @@ article {
   color: #fff;
   font-size: 1.2em;
   font-weight: 600;
-  line-height: auto;
+  line-height: normal; 
   padding: 15px 100px;
 }
 
