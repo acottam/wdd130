@@ -176,12 +176,12 @@ footer nav {
   padding: 10px 50px;
 }
 
-.social-media a {
+.socialmedia a {
   display: inline-block;
   padding: 5px 10px;
 }
 
-.social-media a img {
+.socialmedia a img {
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -189,6 +189,6 @@ footer nav {
   transition: filter 0.3s ease-in-out;
 }
 
-.social-media a:hover img {
+.socialmedia a:hover img {
   filter: brightness(0) saturate(100%) invert(62%) sepia(59%) saturate(1255%) hue-rotate(346deg); /* Approx. #FB8500 */
 }
