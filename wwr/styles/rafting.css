@@ -1,102 +1,194 @@
 :root {
-    --primary-color: #73FBD3;
-    /*aquamarine*/
-    --secondary-color: #44E5E7;
-    /*Fluorescent cyan*/
-    --accent1-color: #59D2FE;
-    /*vivid sky blue */
-    --accent2-color: #4A8FE7;
-    /*Chefchaouen Blue */
-    --heading-font: "Waiting for the Sunrise", cursive;
-    --body-font: "Knewave", sans-system-ui;
+  --primary-color: #023047; /* prussian blue */
+  --secondary-color: #219EBC; /* blue green */
+  --accent1-color: #FB8500; /* ut orange */
+  --accent2-color: #FFB703; /* selective yellow */
+  --heading-font: "Raleway", sans-serif;
+  --body-font: "Open Sans", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/*.knewave-regular {
-  font-family: "Knewave", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.waiting-for-the-sunrise-regular {
-  font-family: "Waiting for the Sunrise", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-*/
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+  background-color: var(--secondary-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: var(--primary-color); 
+  font-size: 1rem;
+  line-height: 1.75em;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--accent1-color);
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+header {
+  color: var(--accent2-color);
+  padding: 0px;
+}
+
+header .logo {
+  display: block;
+  width: 260px;
+  height: auto;
+  margin: 0 30px ;
+  padding: 5px;
+}
+
+header nav {
+  padding: 14px 30px;
+  margin: 0;
+  background-color: var(--primary-color);
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0 20px;
+  font-style: var(--heading-font);
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--accent1-color);
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 .socialmedia a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #1b1201;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px 50px;
+  text-align: center;
+  opacity: 0.75;
+  background-color: var(--accent2-color);
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.75em;
+  color: var(--primary-color)
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent2-color);
-    color: #111111;
+article {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  opacity: 0.85;
+  background-color: var(--accent1-color);
+  font-size: 1.25em;
+  color: #fff;
 }
 
 .hero article img {
-    float: right;
-    width: 150px;
+  float: right;
+  width: 150px;
+  margin: 12px 50px 12px 25px;
 }
 
-.socialmedia img {
-    width: 100px;
+.hero h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.5em; 
+  padding: 0 50px;
+}
+
+.hero article p {
+  color: #fff;
+  font-size: .9em;
+  font-weight: 600;
+  line-height: 1.5em; 
+  padding: 0 50px;
+}
+
+section {
+  padding: 25px 50px;
+}
+
+section h2 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: var(--accent1-color);
+}
+
+section img {
+  max-width: 400px;
+  max-height: 220px;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  background-color: var(--accent2-color);
+  text-align: center;
+  font-size: .9em;
+  color: var(--secondary-color);
+}
+
+footer p span {
+  display: inline-block;
+  padding: 0;
+  margin: 0 25px;
+  font-size: 2em;
+}
+
+footer nav {
+  background-color: #fff;
+  padding: 10px 50px;
+}
+
+.socialmedia a {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.socialmedia a img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(16%) sepia(40%) saturate(350%) hue-rotate(170deg);
+  transition: filter 0.3s ease-in-out;
+}
+
+.socialmedia a:hover img {
+  filter: brightness(0) saturate(100%) invert(62%) sepia(59%) saturate(1255%) hue-rotate(346deg); /* Approx. #FB8500 */
 }
