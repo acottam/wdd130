@@ -154,6 +154,38 @@ section h2 {
   text-align: center;
 }
 
+#history {
+  padding: 25px 50px 50px 50px;
+  text-align: center;
+}
+
+#history h2 {
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+  color: var(--accent1-color);
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: normal;
+  gap: 50px;
+  text-align: left;
+}
+
+.history-grid .text-block {
+  color: var(--primary-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.history-grid .image-block img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
 #adventure {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
