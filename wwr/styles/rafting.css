@@ -35,6 +35,8 @@ header, main, footer {
 }
 
 header {
+  display: grid;
+  grid-template-columns: 33.3% auto;
   color: var(--accent2-color);
   padding: 0px;
 }
@@ -48,19 +50,23 @@ header .logo {
 }
 
 header nav {
-  padding: 14px 30px;
+  display: flex;
+  padding: 0 25px;
   margin: 0;
   background-color: var(--primary-color);
+  align-items: center;
+  justify-content: center;
 }
 
 header nav a {
-  display: inline-block;
-  padding: 0 20px;
+  padding: 0 25px;
   font-style: var(--heading-font);
   color: #fff;
   font-size: 1.25em;
   font-weight: 500;
   text-decoration: none;
+  text-align: center;
+  min-width: 25%;
 }
 
 header nav a:hover {
@@ -145,12 +151,45 @@ section h2 {
   font-weight: 700;
   line-height: 1.5em;
   color: var(--accent1-color);
+  text-align: center;
 }
 
-section img {
-  max-width: 400px;
-  max-height: 220px;
+#adventure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 25px 50px 50px 50px;
+  background-color: #f8f8f8;
+  justify-items: center;
+  text-align: center;
+}
+
+#adventure h2 {
+  grid-column: span 5;
+}
+
+#adventure figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Forces each item to the same height inside the grid */
   margin: 0;
+}
+
+#adventure img {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1; /* Keeps square-ish images */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#adventure figcaption {
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-size: .8em;
+  font-weight: 400;
 }
 
 footer {
