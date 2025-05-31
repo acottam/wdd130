@@ -3,6 +3,7 @@
   --secondary-color: #219EBC; /* blue green */
   --accent1-color: #FB8500; /* ut orange */
   --accent2-color: #FFB703; /* selective yellow */
+  --accent2-color-hover: #d26500; /* slightly darker orange */
   --heading-font: "Raleway", sans-serif;
   --body-font: "Open Sans", sans-serif;
 }
@@ -70,7 +71,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: var(--accent1-color);
+  color: var(--accent2-color-hover);
 }
 
 p {
@@ -113,9 +114,9 @@ article {
   padding: 20px 0;
   margin: 0;
   opacity: 0.85;
-  background-color: var(--accent1-color);
+  background-color: var(--accent1-color); /* Keep bright orange */
+  color: var(--primary-color);
   font-size: 1.25em;
-  color: #fff;
 }
 
 .hero article img {
@@ -128,6 +129,7 @@ article {
   margin: 0;
   padding: 0;
   color: #fff;
+  color: var(--primary-color);
   font-size: 2em;
   font-weight: 600;
   line-height: 1.5em; 
@@ -136,8 +138,9 @@ article {
 
 .hero article p {
   color: #fff;
+  color: var(--primary-color);
   font-size: .9em;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5em; 
   padding: 0 50px;
 }
