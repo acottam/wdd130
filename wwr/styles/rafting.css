@@ -37,7 +37,7 @@ header, main, footer {
 
 header {
   display: grid;
-  grid-template-columns: 33.3% auto;
+  grid-template-columns: 33.33% auto;
   color: var(--accent2-color);
   padding: 0px;
 }
@@ -93,7 +93,7 @@ p {
   height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 0;
   width: 100%;
@@ -144,7 +144,7 @@ article {
 }
 
 section {
-  padding: 25px 50px;
+  padding: 0;
 }
 
 section h2 {
@@ -153,17 +153,19 @@ section h2 {
   line-height: 1.5em;
   color: var(--primary-color);
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 #history {
   padding: 25px 50px 50px 50px;
   text-align: center;
 }
-
+/*
 #history h2 {
   font-size: 2em;
   margin-bottom: 1.5rem;
 }
+*/
 
 .history-grid {
   display: grid;
@@ -191,7 +193,7 @@ section h2 {
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding: 25px 50px 50px 50px;
-  background-color: #f8f8f8;
+  background-color: #f0f8ff;
   justify-items: center;
   text-align: center;
 }
@@ -224,6 +226,179 @@ section h2 {
   font-weight: 400;
 }
 
+#contact-us {
+
+}
+
+#contact-us h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px 50px;
+  text-align: center;
+  opacity: .75;
+  background-color: var(--accent2-color);
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.75em;
+  color: var(--primary-color)
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0;
+}
+
+/* Contact Info */
+.contact-info {
+  width: 33.33%;
+  padding: 25px 50px 0 50px;
+  background-color: #f0f8ff;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent2-color-hover);
+}
+
+.map iframe {
+  width: 334px;
+  height: 880px;
+  /*border-radius: 6px;*/
+  border: none;
+  margin: 10px -50px 0 -50px;
+  padding: 0;
+}
+
+.contact-main {
+  width: 66.67%;
+  padding: 25px 50px 50px 50px;
+  /*background-color: #f0f8ff;*/
+}
+
+/* Team Section */
+.employee-profiles {
+  margin-bottom: 50px;
+}
+
+.employee-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 5%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.employee-grid figure {
+  max-width: 30%;
+}
+
+figcaption {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+figcaption span {
+  display: block;
+  font-size: .8em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.employee-grid img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--accent2-color);
+}
+
+/* Contact Form */
+.contact-form {
+  margin-bottom: 25px;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: var(--primary-color);
+  width: 100%;
+}
+
+.contact-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+}
+
+fieldset legend {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-subject label {
+  font-weight: normal;
+}
+
+label.contact-subscribe {
+  font-weight: normal;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+  margin-left: 25px;
+}
+
+.contact-form button {
+  background-color: var(--accent1-color);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent2-color-hover);
+}
+
 footer {
   background-color: var(--accent2-color);
   padding: 15px 50px;
@@ -248,6 +423,10 @@ footer {
 .footer-content p span {
   margin: 0 10px;
   font-size: 1.5em;
+}
+
+.footer-content a:hover {
+  color: var(--secondary-color);
 }
 
 .socialmedia {
