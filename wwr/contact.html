@@ -68,7 +68,7 @@
           <!-- CONTACT FORM -->
           <div class="contact-form">
             <h2>Send Us a Message</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" id="form-01">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required>
 
@@ -77,17 +77,17 @@
 
               <fieldset class="contact-subject">
                 <legend>Subject</legend>
-                <label><input type="radio" name="subject" value="General Inquiry" required> General Inquiry</label>
-                <label><input type="radio" name="subject" value="Reservation Question"> Reservation Question</label>
-                <label><input type="radio" name="subject" value="Website Suggestion"> Website Suggestion</label>
+                <label><input type="radio" id="subject-gi" name="subject" value="General Inquiry" required> General Inquiry</label>
+                <label><input type="radio" id="subject-rq" name="subject" value="Reservation Question"> Reservation Question</label>
+                <label><input type="radio" id="subject-ws" name="subject" value="Website Suggestion"> Website Suggestion</label>
               </fieldset>
 
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" required></textarea>
 
-              <label class="contact-subscribe"><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+              <label class="contact-subscribe"><input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter</label>
 
-              <button type="submit">Send Message</button>
+              <button type="submit" id="submit">Send Message</button>
             </form>
           </div>
         </div>
