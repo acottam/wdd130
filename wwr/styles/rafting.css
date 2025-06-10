@@ -397,6 +397,153 @@ label.contact-subscribe {
   background-color: var(--accent2-color-hover);
 }
 
+/* ===== TRIPS PAGE ===== */
+#trips-hero {
+  background-color: #f0f8ff;
+}
+
+#trips-hero h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px 50px;
+  text-align: center;
+  opacity: .75;
+  background-color: var(--accent2-color);
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.75em;
+  color: var(--primary-color)
+}
+
+.cta-contact {
+  text-align: right;
+  margin: 50px 50px 0 50px;
+}
+
+/*
+.contact-button {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--accent2-color-hover);
+}
+*/
+
+.contact-button {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  min-width: 250px;
+  display: inline-block;
+  text-align:  center;
+}
+
+.contact-button:hover {
+  color: inherit;
+  background-color: var(--accent2-color-hover);
+}
+
+
+/* Trip Descriptions */
+#trip-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 50px;
+  background-color: #f0f8ff;
+}
+
+.trip-card {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -50px;
+}
+
+#trip-details .trip-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.trip-card img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  align-self: flex-start;
+}
+
+.trip-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.trip-card h2 {
+  /*
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  */
+}
+
+.trip-card p {
+  /*
+  font-size: 1rem;
+  line-height: 1.6;
+  */
+}
+
+/* Trip Table */
+#trip-table {
+  padding: 50px 50px 75px 50px;
+  background-color: #fff;
+}
+
+#trip-table h2 {
+  text-align: center;
+  /*
+  font-size: 2rem;
+  margin-bottom: 25px;
+  */
+}
+
+#trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#trip-table th,
+#trip-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+#trip-table th {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+#trip-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
 footer {
   background-color: var(--accent2-color);
   padding: 15px 50px;
