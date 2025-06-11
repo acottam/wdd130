@@ -79,6 +79,31 @@ p {
   margin: 0;
 }
 
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 50px;
+  text-align: center;
+  opacity: 0.75;
+  background-color: var(--accent2-color);
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.75em;
+  color: var(--primary-color)
+}
+
 .hero article img {
   float: right;
   width: 150px;
@@ -116,6 +141,7 @@ section h2 {
   margin-bottom: 1.5rem;
 }
 
+/* ===== HOME PAGE ===== */
 .intro {
   margin-top: -50px;
   padding: 0 50px 50px 50px;
@@ -186,30 +212,7 @@ section h2 {
   text-decoration: none;
 }
 
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 0 50px;
-  text-align: center;
-  opacity: 0.75;
-  background-color: var(--accent2-color);
-  font-size: 3.5em;
-  font-weight: 700;
-  line-height: 1.75em;
-  color: var(--primary-color)
-}
-
+/* ===== ABOUT US PAGE ===== */
 article {
   position: absolute;
   bottom: 0;
@@ -226,12 +229,6 @@ article {
   padding: 25px 50px 50px 50px;
   text-align: center;
 }
-/*
-#history h2 {
-  font-size: 2em;
-  margin-bottom: 1.5rem;
-}
-*/
 
 .history-grid {
   display: grid;
@@ -292,10 +289,7 @@ article {
   font-weight: 400;
 }
 
-#contact-us {
-
-}
-
+/* ===== CONTACT US PAGE ===== */
 #contact-us h1 {
   text-align: center;
   padding: 0 50px;
@@ -315,7 +309,6 @@ article {
   padding: 0;
 }
 
-/* Contact Info */
 .contact-info {
   width: 33.33%;
   padding: 25px 50px 0 50px;
@@ -537,12 +530,6 @@ label.contact-subscribe {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-}
-
-.trip-card h2 {
-}
-
-.trip-card p {
 }
 
 /* Trip Table */
