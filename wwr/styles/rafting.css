@@ -144,8 +144,33 @@ section h2 {
 /* ===== HOME PAGE ===== */
 .intro {
   margin-top: -50px;
-  padding: 0 50px 50px 50px;
+  padding: 0 50px;
   text-align: center;
+}
+
+.cta {
+  text-align: center;
+  padding: 25px 50px 50px 50px;
+}
+
+.book-trip-button {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  min-width: 250px;
+  display: inline-block;
+  text-align:  center;
+}
+
+.book-trip-button:hover {
+  color: inherit;
+  background-color: var(--accent2-color-hover);
 }
 
 .grid-section {
@@ -163,17 +188,57 @@ section h2 {
   margin-bottom: 5px;
 }
 
-.newsletter-cta {
+.testimonial-newsletter {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
-  padding: 50px 50px 75px 50px;
+  grid-template-columns: 1fr 1fr;
+  background-color: #f0f8ff;
+  padding: 50px;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.testimonial {
   background-color: #fff;
-  align-items: center;
+  border-left: 6px solid var(--accent1-color);
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.testimonial h3 {
+  font-size: 1.5rem;
+  margin: 0 0 15px;
+  color: var(--primary-color);
+}
+
+.testimonial .quote {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.testimonial .review-count {
+  font-weight: bold;
+  color: var(--accent1-color);
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.testimonial .author {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: var(--primary-color);
+}
+
+.newsletter {
+  margin-top: 25px;
+  padding: 25px;
 }
 
 .newsletter h2 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .newsletter p {
@@ -181,16 +246,23 @@ section h2 {
 }
 
 .newsletter form {
-  display: flex;
-  gap: 10px;
+  display: block;
 }
 
+.newsletter label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.newsletter input[type="text"],
 .newsletter input[type="email"] {
   padding: 10px;
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
-  flex: 1;
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .newsletter button {
@@ -202,10 +274,20 @@ section h2 {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  display: block;
+  margin: 25px auto;
 }
 
 .newsletter button:hover {
   background-color: var(--accent2-color-hover);
+}
+
+#trip-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 50px;
+  background-color: #f0f8ff;
 }
 
 .socialmedia a {
