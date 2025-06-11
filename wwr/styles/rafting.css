@@ -79,46 +79,6 @@ p {
   margin: 0;
 }
 
-.socialmedia a {
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 10px 50px;
-  text-align: center;
-  opacity: 0.75;
-  background-color: var(--accent2-color);
-  font-size: 3.5em;
-  font-weight: 700;
-  line-height: 1.75em;
-  color: var(--primary-color)
-}
-
-article {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 0;
-  margin: 0;
-  opacity: 0.85;
-  background-color: var(--accent1-color); /* Keep bright orange */
-  color: var(--primary-color);
-  font-size: 1.25em;
-}
-
 .hero article img {
   float: right;
   width: 150px;
@@ -154,6 +114,112 @@ section h2 {
   color: var(--primary-color);
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.intro {
+  margin-top: -50px;
+  padding: 0 50px 50px 50px;
+  text-align: center;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 50px;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.grid-item img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.newsletter-cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 50px 50px 75px 50px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 15px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.newsletter button {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: var(--accent2-color-hover);
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 50px;
+  text-align: center;
+  opacity: 0.75;
+  background-color: var(--accent2-color);
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.75em;
+  color: var(--primary-color)
+}
+
+article {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  opacity: 0.85;
+  background-color: var(--accent1-color); /* Keep bright orange */
+  color: var(--primary-color);
+  font-size: 1.25em;
 }
 
 #history {
@@ -231,9 +297,8 @@ section h2 {
 }
 
 #contact-us h1 {
-  font-size: 2.5rem;
   text-align: center;
-  padding: 10px 50px;
+  padding: 0 50px;
   text-align: center;
   opacity: .75;
   background-color: var(--accent2-color);
@@ -403,9 +468,8 @@ label.contact-subscribe {
 }
 
 #trips-hero h1 {
-  font-size: 2.5rem;
   text-align: center;
-  padding: 10px 50px;
+  padding: 0 50px;
   text-align: center;
   opacity: .75;
   background-color: var(--accent2-color);
@@ -419,23 +483,6 @@ label.contact-subscribe {
   text-align: right;
   margin: 50px 50px 0 50px;
 }
-
-/*
-.contact-button {
-  background-color: var(--accent1-color);
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-  background-color: var(--accent2-color-hover);
-}
-*/
 
 .contact-button {
   background-color: var(--accent1-color);
@@ -457,8 +504,6 @@ label.contact-subscribe {
   background-color: var(--accent2-color-hover);
 }
 
-
-/* Trip Descriptions */
 #trip-details {
   display: flex;
   flex-direction: column;
@@ -495,17 +540,9 @@ label.contact-subscribe {
 }
 
 .trip-card h2 {
-  /*
-  font-size: 1.75rem;
-  margin-bottom: 10px;
-  */
 }
 
 .trip-card p {
-  /*
-  font-size: 1rem;
-  line-height: 1.6;
-  */
 }
 
 /* Trip Table */
@@ -516,10 +553,6 @@ label.contact-subscribe {
 
 #trip-table h2 {
   text-align: center;
-  /*
-  font-size: 2rem;
-  margin-bottom: 25px;
-  */
 }
 
 #trip-table table {
@@ -562,7 +595,7 @@ footer {
   font-size: 0.9em;
   color: var(--primary-color);
   margin: 0 auto;
-  grid-column: 1 / 2; /* stays in left/main area */
+  grid-column: 1 / 2; 
 }
 
 .footer-content p span {
@@ -578,7 +611,7 @@ footer {
   display: flex;
   gap: 15px;
   justify-content: flex-end;
-  grid-column: 2 / 3; /* icons stay right */
+  grid-column: 2 / 3;
 }
 
 .socialmedia a img {
