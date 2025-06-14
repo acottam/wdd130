@@ -220,7 +220,7 @@ section h2 {
 
 .testimonial .review-count {
   font-weight: bold;
-  color: var(--accent1-color);
+  color: var(--primary-color);
   margin-bottom: 10px;
   font-size: 1rem;
 }
